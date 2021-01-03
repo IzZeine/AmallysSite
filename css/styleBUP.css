@@ -1,0 +1,379 @@
+/*----------------------------------------------------%Variables%----------------------------------------------------*/
+
+/*Ajouter les variables des couleurs utilisées dans le site*/
+
+:root {
+  --color-red: #ce414b;
+  --color-blue: #000923;
+  --color-White: #ffffff;
+  --color-footer: #070b13;
+}
+
+/*------------------------------------------------------%Body%------------------------------------------------------*/
+
+/* Mettre les configurations par défaut du Body si aucune instruction n'est donnée :
+  - Réinitialiser les margins et padding à 0
+  - Choisir une font et sa taille par défaut
+  - Mettre le BG du body*/
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font: 400 100%/1.5 "Helvetica", "Arial", sans-serif;
+
+  background-color: var(--color-blue);
+}
+
+/*-------------------------------------------------%Margins/Padding%-------------------------------------------------*/
+
+/* Réinitialiser les margins et paddings*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+img,
+a,
+form,
+blockquote,
+figure,
+figcaption,
+header,
+div,
+section,
+footer {
+  padding: 0;
+  margin: 0;
+}
+
+/*------------------------------------------------------%Fonts%------------------------------------------------------*/
+
+/* Importer une font afin de l'utiliser*/
+
+@font-face {
+  font-family: "CindyJulia";
+  src: url("../fonts/Cindy-Julia-Italic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/*-----------------------------------------------------%Listes%-----------------------------------------------------*/
+
+/*Mettre par défault les listes sans style pour ne pas devoir le mettre dans chaque css de chaque liste.
+  Au revoir les petits points!*/
+
+ul {
+  list-style: none;
+}
+
+/*mettres des padding sur les côtés et en dessous des ul pour espacer un peu les listes*/
+/*on remet les FAMEUX petits points! (mais juste pour celles-ci)*/
+
+.ListeDisc {
+  padding: 0 25px;
+  list-style-type: disc;
+}
+
+/*-----------------------------------------------------%Header%-----------------------------------------------------*/
+
+header {
+  display: block;
+  margin-top: 30px;
+  width: 100%;
+}
+
+/*---------------------------------------------------%Navigation%---------------------------------------------------*/
+
+/*------------------------%Mainnav%------------------------*/
+
+/*Mettre un display: table pour aligner le logo et la navigation*/
+
+.mainnav {
+  /*mettre un padding pour que les items ne soit pas coller au bord de la page web*/
+  padding: 0px 50px;
+
+  display: table;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--color-White);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/*Aligner le logo sur le côté gauche*/
+
+.mainnav__logo {
+  margin: 5px 0px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/*
+  -Mettre la navigation en Menu vertical
+  -Changer la font de la navigation, sa taille et sa couleur
+  */
+
+.mainnav__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font: 50px "CindyJulia", Helvetica, Arial, sans-serif;
+  color: var(--color-blue);
+}
+
+.mainnav__link {
+  /*largeur des liens*/
+  width: 200px;
+  /*centrer les mots dans leur boite*/
+  text-align: center;
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none;
+  color: var(--color-blue);
+}
+
+.mainnav__link:visited {
+  color: var(--color-blue);
+}
+.mainnav__link:hover {
+  font-size: 110%;
+}
+.mainnav__link:active {
+  color: var(--color-red);
+}
+
+.mainnav__link--child {
+  display: block;
+  height: 60px;
+  text-decoration: none;
+}
+.mainnav__link--child:visited {
+  color: var(--color-blue);
+}
+.mainnav__link--child:hover {
+  font-size: 110%;
+}
+.mainnav__link--child:active {
+  color: var(--color-red);
+}
+
+/*---------------------%Menu déroulant%---------------------*/
+
+.mainnav__list--child {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+
+  font: 40px "CindyJulia", Helvetica, Arial, sans-serif;
+  /*display:none pour ne pas qu'il soit visible si il n'est pas en :hover*/
+  display: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  /*fait sortir le menu déroulant du nav pour ne pas changer les dimension du nav*/
+  position: absolute;
+}
+
+/*Afficher le menu déroulant quand on survole avec la souris*/
+.mainnav > ul li:hover .mainnav__list--child {
+  display: block;
+}
+
+/*Aligner le texte au centre*/
+.mainnav__list--child li {
+  width: 100%;
+  text-align: center;
+}
+
+/*-------------------------%Logo%-------------------------*/
+
+/*
+  -redimentionner le logo en 70x70(px)
+  -Centrer le logo
+  */
+
+.mainnav__logo img {
+  height: 60px;
+  width: 60px;
+  vertical-align: middle;
+}
+
+.mainnav__logo {
+  padding: 5px 0px;
+  height: 60px;
+  width: 60px;
+}
+
+/*-----------------------------------------------------%Amallys%-----------------------------------------------------*/
+
+/*centrer le logo*/
+.Amallys__Logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+/*changer la taille du logo*/
+.Amallys__Logo--image {
+  padding-top: 20px;
+  width: 600px;
+  height: 600px;
+}
+
+.Amallys__Nom {
+  font: normal 150px "CindyJulia", Helvetica, Arial, sans-serif;
+  color: var(--color-White);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+/*------------------------------------------------------%Titres%------------------------------------------------------*/
+
+h1 {
+  padding: 0 1rem 2rem;
+}
+
+h2 {
+  font: normal 50px "CindyJulia", Helvetica, Arial, sans-serif;
+  color: var(--color-blue);
+  padding: 5px 0 0;
+  margin-left: 15px;
+}
+/*Mettre le titre au dessus du div avec un z-index et le positionner*/
+.wrapper {
+  position: relative;
+}
+.box1 {
+  position: absolute;
+  top: -40px;
+  z-index: 1;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--color-red);
+  /*paramètres des borders, arrondis et couleur*/
+  border: solid var(--color-White);
+  border-radius: 100px;
+}
+
+.box2 {
+  background-color: var(--color-White);
+
+  z-index: 2;
+}
+
+/*-----------------------------------------------------%Sections%-----------------------------------------------------*/
+
+.box2 {
+  background-color: var(--color-White);
+
+  padding: 70px 50px 20px;
+  margin: 0px 0px 70px;
+}
+
+/*mettres des padding sur les côtés et en dessous des p pour espacer un peu le txt*/
+section p {
+  padding: 10px 0;
+}
+section p:first-child {
+  padding: 0;
+}
+
+/*mettre un filtre gris sur les images de base*/
+section img {
+  filter: grayscale(100%);
+  transition-duration: 0.5s;
+  /*ajuster la taille pour ne pase depasser du bloc*/
+  max-width: 100%;
+}
+
+/*désactiver le filtre gris quand la souris survol l'image*/
+section img:hover {
+  filter: grayscale(0%);
+  transition-duration: 0.5s;
+  transform: scale(1.03);
+}
+
+/*grilles et alignement dans la grille des images des sections*/
+.Artcile--images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.Artcile__Photos--Images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+}
+
+.Artcile__Photos--Images li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*------------------------------------------------------%Footer%------------------------------------------------------*/
+
+footer {
+  background-color: var(--color-footer);
+  color: var(--color-White);
+
+  padding: 50px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 100px;
+  justify-items: center;
+}
+.Text__Center {
+  text-align: center;
+}
+
+.Footer__Reseaux img {
+  width: 50px;
+  padding: 2px;
+}
+
+.Footer__Localisation img {
+  width: 200px;
+}
+.Footer__Langues img {
+  padding: 5px;
+  width: 50px;
+}
+
+h3 {
+  padding-bottom: 20px;
+  justify-self: center;
+}
+
+/*mettre un filtre gris sur les images de base*/
+footer img {
+  filter: grayscale(100%);
+  transition-duration: 0.5s;
+}
+
+/*désactiver le filtre gris quand la souris survol l'image*/
+footer img:hover {
+  filter: grayscale(0%);
+  transition-duration: 0.5s;
+  transform: scale(1.1);
+}

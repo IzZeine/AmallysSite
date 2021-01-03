@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="images/Amallys/Logo.png" />
+    <title>AmallysInfos</title>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header id="home">
+      <!--ANNONCES-->
+      <input
+        type="checkbox"
+        id="menu-checkbox--annonces"
+        class="menu-checkbox--annonces"
+      />
+      <label
+        for="menu-checkbox--annonces"
+        class="menu-toggle--annonces"
+        id="true"
+        ><img class="annonces--img" src="images/Annonces/Important.png" alt=""
+      /></label>
+      <label
+        for="menu-checkbox--annonces"
+        class="menu-toggle--annonces"
+        id="false"
+        >X</label
+      >
+      <div class="annonces annonce--important">
+        <img
+          class="annonces--img annonces--img--web"
+          src="images/Annonces/Important.png"
+          alt=""
+        />
+        <p>
+          Ce site est encore en développement, il est donc susceptible d'être
+          mis à jour régulièrement et d'avoir des bugs ou des liens sans
+          résultat. Merci de votre compréhension. Bonne visite!
+        </p>
+      </div>
+      <!--Navigation-->
+      <input type="checkbox" id="menu-checkbox" class="menu-checkbox" />
+      <label for="menu-checkbox" class="menu-toggle" id="true">≡</label>
+      <label for="menu-checkbox" class="menu-toggle" id="false">X</label>
+      <nav class="mainnav">
+        <ul class="mainnav__list">
+          <li>
+            <a class="mainnav__link" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="mainnav__link Actuel" href="#">Infos</a>
+            <ul class="mainnav__list--child">
+              <li>
+                <a class="mainnav__link--child" href="infos.html#Description"
+                  >Description</a
+                >
+              </li>
+              <li>
+                <a class="mainnav__link--child" href="infos.html#Parcours"
+                  >Parcours</a
+                >
+              </li>
+              <li>
+                <a class="mainnav__link--child" href="infos.html#Aptitudes"
+                  >Aptitudes</a
+                >
+              </li>
+              <li>
+                <a class="mainnav__link--child" href="infos.html#Intérêts"
+                  >Intérêts</a
+                >
+              </li>
+              <li>
+                <a class="mainnav__link--child" href="infos.html#Qualités"
+                  >Qualités</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="mainnav__link" href="logos.html">Logos</a>
+            <ul class="mainnav__list--child">
+              <li>
+                <a class="mainnav__link--child" href="logos.html#Clients"
+                  >Clients</a
+                >
+              </li>
+              <li>
+                <a class="mainnav__link--child" href="logos.html#Persos"
+                  >Persos</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="mainnav__link" href="creations.html">Créations</a>
+            <ul class="mainnav__list--child">
+              <li>
+                <a class="mainnav__link--child" href="creations.html#Animations"
+                  >Animations</a
+                >
+              </li>
+              <li>
+                <a
+                  class="mainnav__link--child"
+                  href="creations.html#Infographie"
+                  >Infographie</a
+                >
+              </li>
+              <li>
+                <a class="mainnav__link--child" href="creations.html#Numérique"
+                  >Numérique</a
+                >
+              </li>
+              <li>
+                <a class="mainnav__link--child" href="creations.html#Papier"
+                  >Papier</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="mainnav__link" href="photos.html">Photos</a>
+            <ul class="mainnav__list--child">
+              <li>
+                <a class="mainnav__link--child" href="photos.html#Animaux"
+                  >Animaux</a
+                >
+              </li>
+              <li>
+                <a class="mainnav__link--child" href="photos.html#Paysages"
+                  >Paysages</a
+                >
+              </li>
+              <li>
+                <a class="mainnav__link--child" href="photos.html#Personnes"
+                  >Personnes</a
+                >
+              </li>
+              <li>
+                <a class="mainnav__link--child" href="photos.html#Autre"
+                  >Autre</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="mainnav__link" href="#footer">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--BOUTON-->
+    <a href="#home"
+      ><img
+        class="btn__home--Mobile"
+        src="images/Amallys/HautPage.png"
+        alt="LogoAmallys"
+    /></a>
+    <a href="#home"><div class="btn__home--Web">Haut de page</div></a>
+    <!--CONTENU-->
+    <div class="Amallys__Logo Amallys__Logo--Pages">
+      <img
+        class="Amallys__Logo--logo"
+        src="images/Amallys/logo.png"
+        alt="Amallys Logo"
+      />
+    </div>
+    <h1 class="Amallys__Nom">Informations</h1>
+    <section class="Section__Propos wrapper">
+      <h2 id="Description" class="box1">Description</h2>
+      <div class="box2">
+        <p>
+          Je m'appelle Morgane Guerrero Fernandez, je suis étudiante à l'IAD
+          (Institut des Arts de Diffusion). J'ai commencé mon bachelier en
+          option multimédia en septembre 2019. Je suis actuellement en deuxième
+          année.
+        </p>
+        <p>Je propose ici mes services pour plusieurs types de travaux :</p>
+        <ul class="ListeDisc">
+          <li>Création de vos logos personnalisés et de bonne qualité</li>
+          <li>Vectorisation de vos logos déjà créés</li>
+          <li>Création de montage photos</li>
+          <li>Correction colorimétrique de photos</li>
+          <li>Création de courtes animations</li>
+          <li>Photographie (en apprentissage...)</li>
+        </ul>
+        <p>
+          Si vous voulez me joindre, vous pouvez vous rendre en bas de page où
+          vous trouverez mes informations.
+          <a href="#footer">(ou cliquez ici)</a>
+        </p>
+      </div>
+    </section>
+    <section class="Section__Propos wrapper">
+      <h2 id="Parcours" class="box1">Parcours</h2>
+      <div class="box2">
+        <p>
+          J'ai commencé mes secondaires à L'Institut de l'Enfant Jésus à
+          Nivelles. Ayant raté ma quatrième année, j'ai changé d'orientation
+          pour aller étudier à L'IPAM (Institut Provincial des Arts et des
+          Métiers) en technique de qualification en infographie où j'ai eu mon
+          CESS (Certificat d'Enseignement Secondaire Supérieur) en juin 2018.
+          Durant ces deux années d'infographie, j'ai eu l'occasion de faire deux
+          stages en entreprises. En 2017, j'ai fait un stage de deux semaines à
+          Bruxelles Chez Hello Agency (qui a fermé par la suite il me semble).
+          En 2018, j'ai été durant deux semaines faire un stage chez We Tell
+          Stories et Eyecone à Bruxelles.
+        </p>
+        <p>
+          À la fin de mes secondaires, j'ai commencé une septième année de
+          sciences à Martin V à Louvain-La-Neuve. J'aimais bien les sciences
+          mais je ne me voyais pas faire ça de mon métier. Je n'ai fait qu'une
+          demi-année, ensuite j'ai fait une formation de réorientation au CPFB à
+          Louvain-La-Neuve durant le reste de l'année scolaire. Durant cette
+          formation j'ai encore fait deux stages, un d'une semaine dans une
+          ferme à Baulers et un des 3 semaines dans une menuiserie à Bruxelles
+          (DecoWood). Cette formation m'a servi à confirmer mon choix en
+          infographie. Malgré toutes les voies que j'ai essayées, seule cette de
+          l'infographie m'offrait le métier qui me convenait.
+        </p>
+        <p>
+          Après cela, j'ai commencé des études supérieures en multimédia à L'IAD
+          (Institut des Arts de Diffusion), où je suis actuellement en
+          formation.
+        </p>
+      </div>
+    </section>
+    <section class="Section__Propos--infos">
+      <div class="box2 wrapper">
+        <h2 id="Aptitudes" class="box1 box1--infos">Aptitudes</h2>
+        <h4>Logiciels d'art :</h4>
+        <ul>
+          <li>Abode Illustrator</li>
+          <li>Abode Photoshop</li>
+          <li>Abode After Effects</li>
+          <li>Abode Animate</li>
+          <li>Abode InDesign</li>
+        </ul>
+        <h4>Logiciels de montage :</h4>
+        <ul>
+          <li>Abode Première Pro</li>
+          <li>Avid Media Composer</li>
+          <li>Protools</li>
+        </ul>
+        <h4>Logiciels HTML/CSS :</h4>
+        <ul>
+          <li>Visual studio code</li>
+        </ul>
+      </div>
+      <div class="box2 wrapper">
+        <h2 id="Intérêts" class="box1 box1--infos">Intérêts</h2>
+        <ul>
+          <h4>Arts :</h4>
+          <li>Dessin</li>
+          <li>Musique</li>
+          <li>Photographie</li>
+          <li>Vidéo (et montage vidéo)</li>
+          <h4>Sports :</h4>
+          <li>Équitation</li>
+          <li>Athlétisme</li>
+          <li>Boxe</li>
+          <h4>Animaux</h4>
+        </ul>
+      </div>
+      <div class="box2 wrapper">
+        <h2 id="Qualités" class="box1 box1--infos">Qualités</h2>
+        <ul>
+          <h4>Dans le travail :</h4>
+          <li>Joignable</li>
+          <li>Créative</li>
+          <li>Rigoureuse</li>
+          <li>Patiente</li>
+          <li>Efficace</li>
+          <li>Perfectionniste</li>
+        </ul>
+      </div>
+    </section>
+    <section class="Section__Propos wrapper"></section>
+    <section class="Section__Propos wrapper"></section>
+    <!--FOOTER-->
+    <footer id="footer">
+      <div class="footer">
+        <div class="Text__Center Footer__Reseaux">
+          <h3>Mes réseaux sociaux</h3>
+          <a href="https://www.facebook.com/AmallysCreation" target="_blank"
+            ><img src="images/ReseauxSociaux/Facebook.png" alt="Facebook"
+          /></a>
+          <a
+            href="https://www.instagram.com/amallys_creation/?hl=fr"
+            target="_blank"
+            ><img src="images/ReseauxSociaux/Instagram.png" alt="Instagram"
+          /></a>
+          <a href="mailto:amallys.creation@gmail.com" target="_blank"
+            ><img src="images/ReseauxSociaux/Gmail.png" alt="Gmail"
+          /></a>
+          <a href="https://www.youtube.com/" target="_blank"
+            ><img src="images/ReseauxSociaux/Youtube.png" alt="Youtube"
+          /></a>
+        </div>
+        <div class="Footer__Services">
+          <h3>Mes services</h3>
+          <ul class="ListeDisc">
+            <li>Création logos</li>
+            <li>Vectorisation logos</li>
+            <li>Montage photos</li>
+            <li>Correction colorimétrique</li>
+            <li>Création courtes animations</li>
+            <li>Photographie (en apprentissage...)</li>
+          </ul>
+        </div>
+        <div class="Text__Center Footer__Langues">
+          <h3>Langues</h3>
+          <a href="indexEn.html"
+            ><img src="images/Langues/Anglais.png" alt=""
+          /></a>
+          <a href="index.html"
+            ><img src="images/Langues/Français.png" alt=""
+          /></a>
+        </div>
+        <div class="Text__Center Footer__Localisation">
+          <h3>Localisation</h3>
+          <a
+            href="https://www.google.com/maps/place/Nivelles/@50.6159524,4.2728816,8z/data=!4m5!3m4!1s0x47c232d0a8aa7353:0x40099ab2f4d6d50!8m2!3d50.59787!4d4.32851"
+            target="_blank"
+            ><img src="images/Map/Nivelles.png" alt="NivellesMap"
+          /></a>
+          <p>Nivelles (Be)</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>(Merci de ne pas prendre ou utiliser les images de ce site)</p>
+        <p>©Amallys</p>
+      </div>
+    </footer>
+  </body>
+</html>

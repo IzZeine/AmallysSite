@@ -1,0 +1,269 @@
+/*----------------------------------------------------%Variables%----------------------------------------------------*/
+
+/*Ajouter les variables des couleurs utilisées dans le site*/
+
+:root {
+  --color-red: #ce414b;
+  --color-blue: #000923;
+  --color-White: #ffffff;
+  --color-footer: #070b13;
+}
+
+/*-------------------------------------------------%Margins/Padding%-------------------------------------------------*/
+
+/* Réinitialiser les margins et paddings*/
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+img,
+a,
+form,
+blockquote,
+figure,
+figcaption,
+header,
+div,
+section,
+footer {
+  padding: 0;
+  margin: 0;
+}
+
+/*------------------------------------------------------%Fonts%------------------------------------------------------*/
+
+@font-face {
+  font-family: "Simplifica";
+  src: url("../fonts/SIMPLIFICA-Typeface.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*-----------------------------------------------------%Listes%-----------------------------------------------------*/
+
+/*Mettre par défault les listes sans style pour ne pas devoir le mettre dans chaque css de chaque liste.
+  Au revoir les petits points!*/
+
+ul {
+  list-style: none;
+}
+
+/*mettres des padding sur les côtés et en dessous des ul pour espacer un peu les listes*/
+/*on remet les FAMEUX petits points! (mais juste pour celles-ci)*/
+
+.ListeDisc {
+  padding: 0 25px;
+  list-style-type: disc;
+}
+
+/*------------------------------------------------------%Body%------------------------------------------------------*/
+
+body {
+  background-color: var(--color-blue);
+}
+
+/*-----------------------------------------------------%Header%-----------------------------------------------------*/
+
+header {
+  display: block;
+  width: 100%;
+  background-color: var(--color-White);
+}
+@media all and (min-width: 1050px) {
+  header {
+    background-color: var(--color-blue);
+    margin-top: 30px;
+  }
+}
+
+/*---------------------------------------------------%Navigation%---------------------------------------------------*/
+
+/*--------------------%NavigationMobile%--------------------*/
+
+.menu-checkbox {
+  display: none;
+}
+
+.menu-toggle {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  z-index: 1;
+}
+
+.menu-toggle#true {
+  color: var(--color-White);
+  opacity: 100;
+}
+.menu-toggle#false {
+  color: var(--color-blue);
+  opacity: 0;
+}
+
+.menu-checkbox:checked ~ .menu-toggle#false {
+  opacity: 100;
+}
+.menu-checkbox:checked ~ .menu-toggle#true {
+  opacity: 0;
+}
+
+.mainnav {
+  display: none;
+}
+
+.menu-checkbox:checked ~ .mainnav {
+  width: 100vw;
+  height: 100vh;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.mainnav__list {
+  text-align: center;
+
+  font: 40px "Simplifica", Helvetica, Arial, sans-serif;
+  color: var(--color-blue);
+}
+.mainnav__list--child {
+  font: 20px "Simplifica", Helvetica, Arial, sans-serif;
+}
+
+.mainnav__link {
+  text-decoration: none;
+  color: var(--color-blue);
+  padding: 0 20px;
+}
+.mainnav__link--child {
+  text-decoration: none;
+  color: var(--color-blue);
+}
+
+/*-------------------%NavigationTablette%-------------------*/
+
+@media all and (min-width: 720px) {
+  .mainnav__list {
+    padding: 10%;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .mainnav__list--child {
+    font-size: 30px;
+  }
+}
+
+/*-------------------%NavigationDekstop%-------------------*/
+
+@media all and (min-width: 1050px) {
+  .menu-toggle {
+    display: none;
+  }
+  /*Mettre un display: table pour aligner le logo et la navigation*/
+  .mainnav {
+    /*mettre un padding pour que les items ne soit pas collés au bord de la page web*/
+
+    margin: 0px 0 30px;
+    padding: 0px 50px;
+    display: table;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /*
+      -Mettre la navigation en Menu vertical
+      -Changer la font de la navigation, sa taille et sa couleur
+      */
+  .mainnav__list {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--color-White);
+  }
+
+  .mainnav__link {
+    padding: 0;
+    /*hauteur et largeur des liens*/
+    height: 60px;
+    width: 200px;
+    /*centrer les mots dans leur boite*/
+    text-align: center;
+    /*centrer verticalement, mais ça ne marche pas....*/
+    vertical-align: middle;
+
+    display: table;
+
+    text-decoration: none;
+    color: var(--color-white);
+  }
+
+  .mainnav__link:visited {
+    color: var(--color-white);
+  }
+  .mainnav__link:hover {
+    transform: scale(1.1);
+  }
+  .mainnav__link:active {
+    color: var(--color-red);
+  }
+
+  .mainnav__link--child {
+    display: block;
+    height: 60px;
+    text-decoration: none;
+  }
+
+  .mainnav__link--child:visited {
+    color: var(--color-blue);
+  }
+  .mainnav__link--child:hover {
+    transform: scale(1.1);
+  }
+  .mainnav__link--child:active {
+    color: var(--color-red);
+  }
+
+  /*---------%Menu déroulant%---------*/
+
+  .mainnav__list--child {
+    width: 200px;
+    margin: 0;
+    padding: 0;
+
+    font-size: 30px;
+    /*display:none pour ne pas qu'il soit visible si il n'est pas en :hover*/
+    display: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    /*fait sortir le menu déroulant du nav pour ne pas changer les dimension du nav*/
+    position: absolute;
+
+    border-radius: 0 0 40px 40px;
+  }
+
+  /*Afficher le menu déroulant à partir de 1050px quand on survole avec la souris*/
+  .mainnav > ul li:hover .mainnav__list--child {
+    display: block;
+  }
+
+  /*Aligner le texte au centre*/
+  .mainnav__list--child li {
+    width: 100%;
+    text-align: center;
+  }
+  .mainnav__list--child li:first-child {
+    padding-top: 15px;
+  }
+}

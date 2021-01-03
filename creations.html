@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="images/Amallys/Logo.png" />
+    <title>AmallysCreations</title>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header id="home">
+      <!--ANNONCES-->
+      <input
+        type="checkbox"
+        id="menu-checkbox--annonces"
+        class="menu-checkbox--annonces"
+      />
+      <label
+        for="menu-checkbox--annonces"
+        class="menu-toggle--annonces"
+        id="true"
+        ><img class="annonces--img" src="images/Annonces/Important.png" alt=""
+      /></label>
+      <label
+        for="menu-checkbox--annonces"
+        class="menu-toggle--annonces"
+        id="false"
+        >X</label
+      >
+      <div class="annonces annonce--important">
+        <img
+          class="annonces--img annonces--img--web"
+          src="images/Annonces/Important.png"
+          alt=""
+        />
+        <p>
+          Ce site est encore en développement, il est donc susceptible d'être
+          mis à jour régulièrement et d'avoir des bugs ou des liens sans
+          résultat. Merci de votre compréhension. Bonne visite!
+        </p>
+      </div>
+      <!--Navigation-->
+      <input type="checkbox" id="menu-checkbox" class="menu-checkbox" />
+      <label for="menu-checkbox" class="menu-toggle" id="true">≡</label>
+      <label for="menu-checkbox" class="menu-toggle" id="false">X</label>
+      <nav class="mainnav">
+        <ul class="mainnav__list">
+          <li>
+            <a class="mainnav__link" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="mainnav__link" href="infos.html">Infos</a>
+            <ul class="mainnav__list--child">
+              <li>
+                <a class="mainnav__link--child" href="infos.html#Description"
+                  >Description</a
+                >
+              </li>
+              <li>
+                <a class="mainnav__link--child" href="infos.html#Parcours"
+                  >Parcours</a
+                >
+              </li>
+              <li>
+                <a class="mainnav__link--child" href="infos.html#Aptitudes"
+                  >Aptitudes</a
+                >
+              </li>
+              <li>
+                <a class="mainnav__link--child" href="infos.html#Intérêts"
+                  >Intérêts</a
+                >
+              </li>
+              <li>
+                <a class="mainnav__link--child" href="infos.html#Qualités"
+                  >Qualités</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="mainnav__list--deroulant">
+            <a class="mainnav__link" href="logos.html">Logos</a>
+            <ul class="mainnav__list--child">
+              <li>
+                <a class="mainnav__link--child" href="logos.html#Clients"
+                  >Clients</a
+                >
+              </li>
+              <li>
+                <a class="mainnav__link--child" href="logos.html#Persos"
+                  >Persos</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="mainnav__list--deroulant">
+            <a class="mainnav__link Actuel" href="#">Créations</a>
+            <ul class="mainnav__list--child">
+              <li>
+                <a class="mainnav__link--child" href="creations.html#Animations"
+                  >Animations</a
+                >
+              </li>
+              <li>
+                <a
+                  class="mainnav__link--child"
+                  href="creations.html#Infographie"
+                  >Infographie</a
+                >
+              </li>
+              <li>
+                <a class="mainnav__link--child" href="creations.html#Numérique"
+                  >Numérique</a
+                >
+              </li>
+              <li>
+                <a class="mainnav__link--child" href="creations.html#Papier"
+                  >Papier</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="mainnav__list--deroulant">
+            <a class="mainnav__link" href="photos.html">Photos</a>
+            <ul class="mainnav__list--child">
+              <li>
+                <a class="mainnav__link--child" href="photos.html#Animaux"
+                  >Animaux</a
+                >
+              </li>
+              <li>
+                <a class="mainnav__link--child" href="photos.html#Paysages"
+                  >Paysages</a
+                >
+              </li>
+              <li>
+                <a class="mainnav__link--child" href="photos.html#Personnes"
+                  >Personnes</a
+                >
+              </li>
+              <li>
+                <a class="mainnav__link--child" href="photos.html#Autre"
+                  >Autre</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="mainnav__link" href="#footer">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--BOUTON-->
+    <a href="#home"
+      ><img
+        class="btn__home--Mobile"
+        src="images/Amallys/HautPage.png"
+        alt="LogoAmallys"
+    /></a>
+    <a href="#home"><div class="btn__home--Web">Haut de page</div></a>
+    <!--CONTENU-->
+    <div class="Amallys__Logo Amallys__Logo--Pages">
+      <img
+        class="Amallys__Logo--logo"
+        src="images/Amallys/logo.png"
+        alt="Amallys Logo"
+      />
+    </div>
+    <h1 class="Amallys__Nom">Créations</h1>
+    <section class="Section__Dessins wrapper">
+      <h2 id="Animations" class="box1">Animations</h2>
+      <div class="box2">
+        <ul class="Section__image--16-9">
+          <li>
+            <video controls width="250">
+              <source
+                src="images/Dessins/Animations/Marche.mp4"
+                type="video/mp4"
+              />
+              Sorry, your browser doesn't support embedded videos.
+            </video>
+          </li>
+          <li>
+            <video controls width="250">
+              <source
+                src="images/Dessins/Animations/MotionDesign.mp4"
+                type="video/mp4"
+              />
+              Sorry, your browser doesn't support embedded videos.
+            </video>
+          </li>
+          <li>
+            <video controls width="250">
+              <source
+                src="images/Dessins/Animations/ShapeDesign.mp4"
+                type="video/mp4"
+              />
+              Sorry, your browser doesn't support embedded videos.
+            </video>
+          </li>
+          <li>
+            <video controls width="250">
+              <source
+                src="images/Dessins/Animations/Poussin.mp4"
+                type="video/mp4"
+              />
+              Sorry, your browser doesn't support embedded videos.
+            </video>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="Section__Dessins wrapper">
+      <h2 id="Infographie" class="box1">Infographie</h2>
+      <div class="box2">
+        <ul class="Section__image--16-9">
+          <li><img src="images/Dessins/Infographie/Arrow.jpg" alt="" /></li>
+          <li><img src="images/Dessins/Infographie/Café.jpg" alt="" /></li>
+          <li>
+            <img src="images/Dessins/Infographie/Serpent-01.jpg" alt="" />
+          </li>
+          <li><img src="images/Dessins/Infographie/isométrie.jpg" alt="" /></li>
+        </ul>
+        <ul class="Section__image--9-16">
+          <li><img src="images/Dessins/Infographie/Dada.jpg" alt="" /></li>
+          <li>
+            <img src="images/Dessins/Infographie/DaveMcKaenApres.jpg" alt="" />
+          </li>
+          <li>
+            <img
+              src="images/Dessins/Infographie/CompositionColor2.0.jpg"
+              alt=""
+            />
+          </li>
+          <li>
+            <img src="images/Dessins/Infographie/IronMan3.0.jpg" alt="" />
+          </li>
+          <li>
+            <img src="images/Dessins/Infographie/Zoostralia.png" alt="" />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="Section__Dessins wrapper">
+      <h2 id="Numérique" class="box1">Numérique</h2>
+      <div class="box2">
+        <ul class="Section__image--1-1">
+          <li><img src="images/Dessins/Numériques/Dragon.jpg" alt="" /></li>
+          <li><img src="images/Dessins/Numériques/Jaguard.jpg" alt="" /></li>
+          <li><img src="images/Dessins/Numériques/Natsu.jpg" alt="" /></li>
+          <li><img src="images/Dessins/Numériques/Renard.jpg" alt="" /></li>
+        </ul>
+      </div>
+    </section>
+    <section class="Section__Dessins wrapper">
+      <h2 id="Papier" class="box1">Papier</h2>
+      <div class="box2">
+        <ul class="Section__image--1-1">
+          <li><img src="images/Dessins/Papiers/ChatTatoo.jpg" alt="" /></li>
+          <li><img src="images/Dessins/Papiers/CiseauxColle.jpg" alt="" /></li>
+          <li><img src="images/Dessins/Papiers/CiseauxNoir.jpg" alt="" /></li>
+          <li><img src="images/Dessins/Papiers/CiseauxRouge.jpg" alt="" /></li>
+          <li><img src="images/Dessins/Papiers/Couteau.jpg" alt="" /></li>
+          <li><img src="images/Dessins/Papiers/Cranes.jpg" alt="" /></li>
+          <li><img src="images/Dessins/Papiers/Femme.jpg" alt="" /></li>
+          <li><img src="images/Dessins/Papiers/Muscles1.jpg" alt="" /></li>
+          <li><img src="images/Dessins/Papiers/Muscles2.jpg" alt="" /></li>
+          <li><img src="images/Dessins/Papiers/RequinMur.jpg" alt="" /></li>
+          <li><img src="images/Dessins/Papiers/Tasse.jpg" alt="" /></li>
+        </ul>
+      </div>
+    </section>
+    <!--FOOTER-->
+    <footer id="footer">
+      <div class="footer">
+        <div class="Text__Center Footer__Reseaux">
+          <h3>Mes réseaux sociaux</h3>
+          <a href="https://www.facebook.com/AmallysCreation" target="_blank"
+            ><img src="images/ReseauxSociaux/Facebook.png" alt="Facebook"
+          /></a>
+          <a
+            href="https://www.instagram.com/amallys_creation/?hl=fr"
+            target="_blank"
+            ><img src="images/ReseauxSociaux/Instagram.png" alt="Instagram"
+          /></a>
+          <a href="mailto:amallys.creation@gmail.com" target="_blank"
+            ><img src="images/ReseauxSociaux/Gmail.png" alt="Gmail"
+          /></a>
+          <a href="https://www.youtube.com/" target="_blank"
+            ><img src="images/ReseauxSociaux/Youtube.png" alt="Youtube"
+          /></a>
+        </div>
+        <div class="Footer__Services">
+          <h3>Mes services</h3>
+          <ul class="ListeDisc">
+            <li>Création logos</li>
+            <li>Vectorisation logos</li>
+            <li>Montage photos</li>
+            <li>Correction colorimétrique</li>
+            <li>Création courtes animations</li>
+            <li>Photographie (en apprentissage...)</li>
+          </ul>
+        </div>
+        <div class="Text__Center Footer__Langues">
+          <h3>Langues</h3>
+          <a href="indexEn.html"
+            ><img src="images/Langues/Anglais.png" alt=""
+          /></a>
+          <a href="index.html"
+            ><img src="images/Langues/Français.png" alt=""
+          /></a>
+        </div>
+        <div class="Text__Center Footer__Localisation">
+          <h3>Localisation</h3>
+          <a
+            href="https://www.google.com/maps/place/Nivelles/@50.6159524,4.2728816,8z/data=!4m5!3m4!1s0x47c232d0a8aa7353:0x40099ab2f4d6d50!8m2!3d50.59787!4d4.32851"
+            target="_blank"
+            ><img src="images/Map/Nivelles.png" alt="NivellesMap"
+          /></a>
+          <p>Nivelles (Be)</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>(Merci de ne pas prendre ou utiliser les images de ce site)</p>
+        <p>©Amallys</p>
+      </div>
+    </footer>
+  </body>
+</html>
