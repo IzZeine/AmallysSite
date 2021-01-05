@@ -3,10 +3,15 @@
 /*Ajouter les variables des couleurs utilisées dans le site*/
 
 :root {
+  /*couleurs du site*/
   --color-red: #ce414b;
   --color-blue: #000923;
   --color-White: #ffffff;
   --color-footer: #070b13;
+  /*couleurs des annonces*/
+  --color-important: #ef1111;
+  --color-moyen: #f7931e;
+  --color-bien: #009245;
 }
 
 /*------------------------------------------------------%Body%------------------------------------------------------*/
@@ -120,13 +125,13 @@ header {
 }
 
 .annonce--important {
-  border: solid red;
+  border: solid var(--color-important);
 }
 .annonce--moyen {
-  border: solid orange;
+  border: solid var(--color-moyen);
 }
 .annonce--bien {
-  border: solid green;
+  border: solid var(--color-bien);
 }
 
 .menu-checkbox--annonces {
@@ -144,8 +149,9 @@ header {
 .menu-toggle--annonces#true {
   opacity: 100;
 }
+/*changer la couleur du var en fonction de l'annonce*/
 .menu-toggle--annonces#false {
-  color: orange;
+  color: var(--color-moyen);
   opacity: 0;
 }
 
@@ -579,11 +585,9 @@ h4 {
 section p {
   padding: 10px 0;
 }
-
 section img {
   max-width: 100%;
 }
-
 @media all and (min-width: 1280px) {
   /*mettre un filtre gris sur les images de base*/
   section img {
@@ -595,6 +599,19 @@ section img {
     filter: grayscale(0%);
     transition-duration: 0.5s;
     transform: scale(1.03);
+  }
+}
+
+.Section__Propos {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 20px;
+}
+@media all and (min-width: 1280px) {
+  .Section__Propos {
+    grid-template-columns: 300px 1fr;
   }
 }
 
