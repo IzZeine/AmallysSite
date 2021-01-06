@@ -496,7 +496,6 @@ h1 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
   padding: 10px 10px 40px;
 }
 @media all and (min-width: 450px) {
